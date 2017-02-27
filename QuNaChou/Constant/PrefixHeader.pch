@@ -1,0 +1,83 @@
+//
+//  PrefixHeader.pch
+//  WYD
+//
+//  Created by WYD on 16/3/31.
+//  Copyright © 2016年 WYD. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define RequestTime @"3"  //请求时间
+#define rid @"6355aeedab96a323a5b040de07cdc6dc" //rid
+#define QNCURL @"http://aipuman.com/qnc/home/"  //前缀
+
+
+//DEBUG  模式下打印日志,当前行
+
+//#ifndef DEBUG
+//#define ZPLog(...) NSLog(__VA_ARGS__);
+//#else
+//#define ZPLog(...)
+//#endif
+
+
+#ifdef DEBUG
+#   define ZPLog(...) NSLog(__VA_ARGS__);
+#else
+#   define ZPLog(...)
+#endif
+
+
+
+// 获取手机屏幕宽度,高度
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+
+//背景色
+
+#define TB_COLOR_GRAY [UIColor colorWithRed:245.0/255.0f green:245.0/255.0f blue:245.0/255.0f alpha:1.0]
+
+#define TB_COLOR_RED [UIColor colorWithRed:250.0/255.0f green:72.0/255.0f blue:48.0/255.0f alpha:1.0]
+
+#define TB_COLOR_SELECTE [UIColor colorWithRed:203.0/255.0f green:248.0/255.0f blue:255.0/255.0f alpha:1.0]
+
+#define TB_COLOR_NARMAL [UIColor colorWithRed:234.0/255.0f green:252.0/255.0f blue:255.0/255.0f alpha:1.0]
+
+#define TEXT_COLOR_BLUE [UIColor colorWithRed:68.0/255.0f green:100.0/255.0f blue:237.0/255.0f alpha:1.0]
+
+#define PINK_COLOR [UIColor colorWithRed:255.0/255.0f green:206.0/255.0f blue:199.0/255.0f alpha:1.0]
+
+//#define TEXT_COLOR_BLACK [UIColor colorWithRed:34.0/255.0f green:34.0/255.0f blue:34.0/255.0f alpha:1.0]
+
+#define TEXT_COLOR_RED [UIColor colorWithRed:250.0/255.0f green:72.0/255.0f blue:48.0/255.0f alpha:1.0]
+
+#define TEXT_COLOR_GRAY [UIColor colorWithRed:136.0/255.0f green:136.0/255.0f blue:136.0/255.0f alpha:1.0]
+
+#define BACKGUND_COLOR [UIColor colorWithRed:242.0/255.0f green:242.0/255.0f blue:242.0/255.0f alpha:1.0]
+
+#define BACKGUND_COLOR_YELLOW [UIColor colorWithRed:255.0/255.0f green:242.0/255.0f blue:199.0/255.0f alpha:1.0]
+
+#define TEXT_COLOR_YELLOW [UIColor colorWithRed:254.0/255.0f green:150.0/255.0f blue:1.0/255.0f alpha:1.0]
+
+
+
+
+//#define BLUE_NV_COLOR [UIColor colorWithRed:184.0/255.0f green:229.0/255.0f blue:255.0/255.0f alpha:1.0]
+
+//#define GRAY_BG_COLOR [UIColor colorWithRed:236.0/255.0f green:236.0/255.0f blue:236.0/255.0f alpha:1.0]
+
+
+
+#define DARKGRAY_TEXT_COLOR [UIColor darkGrayColor]
+#define LIGHTGRAY_TEXT_COLOR [UIColor lightGrayColor]
+
+#define kTextFont(fontSize) [UIFont systemFontOfSize:fontSize]
+
+
+#endif /* PrefixHeader_pch */
