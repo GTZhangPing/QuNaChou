@@ -12,4 +12,12 @@ add something
 
 
 
+<<<<<<< HEAD
 我有添加了
+=======
+我有添加了
+
+Master 添加
+
+test-zp 提交
+>>>>>>> 1929665e80e6bbf569921b2b97a23df7cef0019e
